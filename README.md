@@ -7,6 +7,7 @@ Web Scraping using cheerio and use redis to queue the data
 # Database
 ```
 create table news 
+```
 | Field         | Type   |
 | :------------ |:------:|
 | title         | string |
@@ -18,7 +19,6 @@ create table news
 | date_created  | string |
 | date_published| string |
 | date_updated  | string |
-```
 
 ### Setup
 ```hash
@@ -38,9 +38,12 @@ pm2 stop pm2.config.js -> to stop cron
 ---
 
 ### Tools
-***Queue***
+
+**Queue**
 - [Bull](https://github.com/OptimalBits/bull)
-***Web Scrap***
+
+**Web Scrap**
 - [Cheerio](https://cheerio.js.org/)
-***Process Manager***
+
+**Process Manager**
 - [PM2](https://pm2.keymetrics.io/)
